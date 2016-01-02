@@ -19,6 +19,7 @@ namespace Labinator2016R1.Controllers
     using Lib.Utilities;
     using Utility;
     using ViewModels.DatatablesViewModel;
+
     /// <summary>
     /// Back-end processing for all User-related work and pages.
     /// </summary>
@@ -64,6 +65,7 @@ namespace Labinator2016R1.Controllers
         {
             return this.View();
         }
+
         /// <summary>
         /// Displays a page to edit a user
         /// </summary>
@@ -76,6 +78,7 @@ namespace Labinator2016R1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             if (id == 0)
             {
                 user = new User() { UserId = 0, EmailAddress = "New" };
@@ -88,6 +91,7 @@ namespace Labinator2016R1.Controllers
                     return this.HttpNotFound();
                 }
             }
+
             return this.View(user);
         }
 
@@ -110,10 +114,12 @@ namespace Labinator2016R1.Controllers
                 {
                     this.db.Update<User>(user);
                 }
+
                 this.db.SaveChanges();
-                return RedirectToAction("Index");
+                return this.RedirectToAction("Index");
             }
-            return View(user);
+
+            return this.View(user);
         }
 
         /// <summary>
@@ -127,11 +133,13 @@ namespace Labinator2016R1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             User user = this.db.Query<User>().Where(u => u.UserId == id).FirstOrDefault();
             if (user == null)
             {
                 return this.HttpNotFound();
             }
+
             return this.View(user);
         }
 
@@ -147,8 +155,9 @@ namespace Labinator2016R1.Controllers
             User user = this.db.Query<User>().Where(u => u.UserId == id).FirstOrDefault();
             this.db.Remove<User>(user);
             this.db.SaveChanges();
-            return RedirectToAction("Index");
+            return this.RedirectToAction("Index");
         }
+
         /// <summary>
         /// Used to respond to an AJAX request for a list of Users. The results are then
         /// used to populate a DataTable on the Index Page.

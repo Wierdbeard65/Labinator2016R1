@@ -28,7 +28,7 @@ namespace Labinator2016R1.Controllers
         private ILabinatorDb db;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ClassroomsController"/> class.
+        /// Initializes a new instance of the <see cref="HomeController"/> class.
         /// This version used in production and creates handles for both the Database and the SkyTap interface
         /// </summary>
         public HomeController()
@@ -37,7 +37,7 @@ namespace Labinator2016R1.Controllers
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ClassroomsController"/> class.
+        /// Initializes a new instance of the <see cref="HomeController"/> class.
         /// This version is used when unit testing and takes in the handles.
         /// </summary>
         /// <param name="db">Stub for the fake Database.</param>

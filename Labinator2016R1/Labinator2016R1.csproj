@@ -179,13 +179,27 @@
       <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTColumn.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTOrder.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTOrderDir.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTParameters.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTResult.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTRow.cs" />
-    <Compile Include="ViewModels\DatatablesViewModel\DTSearch.cs" />
+    <Compile Include="ViewModels\DatatablesViewModel\DTColumn.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTOrder.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTOrderDir.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTParameters.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTResult.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTRow.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="ViewModels\DatatablesViewModel\DTSearch.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
     <Compile Include="ViewModels\IndexViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>
