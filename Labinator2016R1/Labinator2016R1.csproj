@@ -221,7 +221,7 @@
     <Content Include="Images\ININ_favicon.png" />
     <Content Include="Images\midLeftLabLogin.jpg" />
     <Content Include="Images\midRightLabLogin.jpg" />
-    <None Include="Properties\PublishProfiles\Test.pubxml" />
+    <None Include="Properties\PublishProfiles\Debug.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />

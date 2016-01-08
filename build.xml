@@ -11,7 +11,7 @@
     <Labinator2016R1>Labinator2016R1</Labinator2016R1>
     <Labinator2016R1Tests>Labinator2016R1.Tests</Labinator2016R1Tests>
     <Configuration Condition="$(Configuration) == ''">Debug</Configuration>
-    <PublishProfile Condition="$(PublishProfile) == ''">Test</PublishProfile>
+    <PublishProfile Condition="$(PublishProfile) == ''">Debug</PublishProfile>
     <OutputDir>.out</OutputDir>
   </PropertyGroup>
 
