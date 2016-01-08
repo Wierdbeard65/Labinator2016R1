@@ -10,8 +10,8 @@
   <PropertyGroup>
     <Labinator2016R1>Labinator2016R1</Labinator2016R1>
     <Labinator2016R1Tests>Labinator2016R1.Tests</Labinator2016R1Tests>
-    <Configuration Condition="$(Configuration) == ''">Test</Configuration>
-    <PublishProfile Condition="$(PublishProfile) == ''">Test</PublishProfile>
+    <Configuration Condition="$(Configuration) == ''">Debug</Configuration>
+    <PublishProfile Condition="$(PublishProfile) == ''">Debug</PublishProfile>
     <OutputDir>.out</OutputDir>
   </PropertyGroup>
 
@@ -20,7 +20,7 @@
     <Projects Include="$(Labinator2016R1)" />
 
     <!-- Test projects -->
-    <TestProjects Include="$(Labinator2016R1Tests)" />
+    <TestProjects Include="$(Labinator2016R1.Tests)" />
   </ItemGroup>
 
   <Target Name="CreateDirectories">
