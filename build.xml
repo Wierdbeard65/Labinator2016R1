@@ -20,7 +20,7 @@
     <Projects Include="$(Labinator2016R1)" />
 
     <!-- Test projects -->
-    <TestProjects Include="$(Labinator2016R1.Tests)" />
+    <TestProjects Include="$(Labinator2016R1Tests)" />
   </ItemGroup>
 
   <Target Name="CreateDirectories">
