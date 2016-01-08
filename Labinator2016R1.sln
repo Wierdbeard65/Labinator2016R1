@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labinator2016R1.Lib", "Labi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DAE60D5-85F0-4039-BDEA-803726F35229}"
 	ProjectSection(SolutionItems) = preProject
+		build.xml = build.xml
 		ccm.config = ccm.config
 		Doxyfile.txt = Doxyfile.txt
 	EndProjectSection

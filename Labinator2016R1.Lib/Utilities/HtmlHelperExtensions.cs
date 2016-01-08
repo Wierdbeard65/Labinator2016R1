@@ -9,6 +9,7 @@
 /// </summary>
 namespace Labinator2016R1.Lib.Utilities
 {
+    using System.Linq;
     using System.Reflection;
     using System.Web.Mvc;
 
@@ -26,8 +27,17 @@ namespace Labinator2016R1.Lib.Utilities
         {
             try
             {
+                string response;
                 var version = Assembly.GetExecutingAssembly().GetName().Version;
-                return MvcHtmlString.Create(version.ToString());
+                response = version.ToString();
+                Assembly assembly = Assembly.GetExecutingAssembly();
+                object[] attributes = assembly.GetCustomAttributes(true);
+                var config = attributes.OfType<AssemblyDescriptionAttribute>().FirstOrDefault();
+                if (config != null)
+                {
+                    response = response + " " + config.Description;
+                }
+                return MvcHtmlString.Create(response);
             }
             catch
             {
